@@ -1,0 +1,61 @@
+
+
+/*
+jCart v1.3
+http://conceptlogic.com/jcart/
+
+This file represents any existing CSS your site may already use
+
+*/
+
+
+
+
+#sidebar { width:35%; float:right; }
+
+
+
+.clear { clear:both; }
+
+/* Item forms */
+
+.jcart ul { margin:0; list-style:none; padding:0 20px; text-align:left; }
+.jcart fieldset { border:0; }
+.jcart strong { color:#000066; }
+.jcart .button { margin:0; padding:5px; }
+
+.jcart-main{/*do not copy this class in project*/
+    background:#fff;
+    border: 1px solid #ccc;
+    border-radius:4px ;
+}
+
+.push-class{
+    margin-bottom: 20px;
+}
+
+.field-bottom{margin-bottom: 5px;}
+
+.btn-place-order{
+    width: 50%;
+    margin-top: 6px;
+    color: #fff;
+    background-color: #60d604;
+    height:40px; 
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.btn-place-order{
+float: right;
+}
+
+.btn-place-order:hover{
+    width: 50%;
+    margin-top: 6px;
+    color: #fff;
+    background-color: #60d604;
+    height:40px; 
+    background-image: linear-gradient(to bottom,#53b904,#60d604);
+    background: linear-gradient(to bottom,#5fd203 0%,#53bd05 100%);
+}

@@ -1,0 +1,76 @@
+
+.navbar-inverse{
+	background:#fff; height:100px;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75); 
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+	}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #ccc;
+
+}
+
+.navbar-inverse .navbar-nav > li > a:focus,.navbar-inverse .navbar-nav > li > a:hover {
+	color: #a9b947;
+
+}
+
+.navbar-collapse {
+	position: relative;
+}
+
+ .navbar-nav{
+ 	position: absolute;
+ 	right: 0px;
+ 	padding-top: 1%;
+ }
+
+ .checkout-btn {
+ 	background: #adbc4e; 
+ 	border-color: #a9b947; 
+ 	margin-top: 7px;
+ }
+
+ .btn-group, .btn-group-vertical{
+ 	margin-top: 7px;
+ 	margin-right: 10px;
+ }
+
+.btn-default {
+  color: #000;
+  background-color: #fff;
+  /*border-color: #ccc;*/
+  border: 0px;
+  font-weight: bold;
+
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #000;
+  background-color: #ffffff;/*e6e6e6*/
+  /*border-color: #adadad;*/
+  border: 0px;
+}
+
+.btn-default-width{
+	width: 100%;
+}
+
+#object{
+	/*height:200px; */
+	width:298px;
+	background:#fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	position:absolute;
+	top:100px;
+	right: 0;
+	margin:100px 10px 20px 20px;
+	
+}

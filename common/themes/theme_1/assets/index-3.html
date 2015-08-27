@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Restaurant Menu</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+        <link href="css/menu-tabs.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Daily Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Signup</a>
+                    </li>
+                    <!--<li>
+                        <div class="btn-group">
+                            <a href="javascript:void(0)" class="btn btn-default">Daily Menu</a>
+                            <a href="index-3.html" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#MyTarget1">Monday</a></li>
+                                <li><a href="#MyTarget2">Tuesday</a></li>
+                                <li><a href="#MyTarget3">Wednesday</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#MyTarget4">Thursday</a></li>
+                                <li><a href="#MyTarget5">Friday</a></li>
+                            </ul>
+                        </div>
+                    </li>-->
+                    <li class="pull-right">
+                        <form action="/checkout" method="POST">
+                            <button data-items="0" data-toggle="popover" data-content="Please add at least one of our tasty dishes" title="" class="btn btn-primary checkout-btn" type="button" data-is-logged-in="false" data-original-title="Your cart is empty">
+                                <span class="badge">0</span>
+                                <span class="eat_mcv" style="display: none;">400</span>
+                                <span class="eat_ov" style="display: none;">0</span>
+                                <span class="checkout-btn-text hidden-xs hidden-sm">Check Out</span>
+                                <span class="checkout-btn-icon">&nbsp;</span>
+                                <span class="checkout-btn-countdown"></span>
+                            </button>
+                        </form>
+                    </li>                                        
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+        <div class="container week-menu-margin">
+            <div class="row">
+                <div class="col-md-2"><a class="navbar-brand" href="index.html">Restaurant Logo</a></div>
+                <div class="btn-pref btn-group btn-group-lg" role="group" aria-label="...">
+                    <div class="btn-group right-line" role="group">
+                        <a id="day1" class="btn btn-primary" href="#tab1" data-toggle="tab">
+                            <div class="mon"></div>
+                            <div class="hidden-xs">Mon</div>
+                            <div class="ct-date">Aug 17</div>
+                        </a>
+                    </div>
+                    <div class="btn-group right-line" role="group">
+                        <a id="day2" class="btn btn-default" href="#tab2" data-toggle="tab">
+                            <div class="tue"></div>
+                            <div class="hidden-xs">Tue</div>
+                            <div class="ct-date">Aug 18</div>
+                        </a>
+                    </div>
+                    <div class="btn-group right-line" role="group">
+                        <a id="day3" class="btn btn-default" href="#tab3" data-toggle="tab">
+                            <div class="wed"></div>
+                            <div class="hidden-xs">Wed</div>
+                            <div class="ct-date">Aug 19</div>
+                        </a>
+                    </div>
+                    <div class="btn-group right-line" role="group">
+                        <a id="day4" class="btn btn-default" href="#tab4" data-toggle="tab">
+                            <div class="thu"></div>
+                            <div class="hidden-xs">Thu</div>
+                            <div class="ct-date">Aug 20</div>
+                        </a>
+                    </div>
+                    <div class="btn-group right-line" role="group">
+                        <a id="day5" class="btn btn-default" href="#tab5" data-toggle="tab">
+                            <div class="fri"></div>
+                            <div class="hidden-xs">Fri</div>
+                            <div class="ct-date">Aug 21</div>
+                        </a>
+                    </div>
+                    <div class="btn-group right-line" role="group">
+                        <a id="day5" class="btn btn-default" href="#tab5" data-toggle="tab">
+                            <div class="sat"></div>
+                            <div class="hidden-xs">Sat</div>
+                            <div class="ct-date">Aug 22</div>
+                        </a>
+                    </div>  
+                    <div class="btn-group" role="group">
+                        <a id="day5" class="btn btn-default" href="#tab5" data-toggle="tab">
+                            <div class="sun"></div>
+                            <div class="hidden-xs">Sun</div>
+                            <div class="ct-date">Aug 23</div>
+                        </a>
+                    </div>                                                                
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container tab-content">
+        <h1 class="page-header">Restaurant Daily Menu</h1>
+        <!-- Page Header -->
+        <!-- /.row -->
+    <div class="tab-pane fade in active" id="tab1">
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Monday</h3>
+                <hr />
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item1.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item2.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item3.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+
+        <!-- Page Header -->
+
+    <div class="tab-pane fade in" id="tab2">    
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Tuesday</h3>
+                <hr />
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item3.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item1.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item2.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Page Header -->
+
+        <div class="tab-pane fade in" id="tab3">
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Wednesday</h3>
+                <hr />
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item1.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item3.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item2.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+    </div>
+<!-- Page Header -->
+
+        <!-- Projects Row -->
+        <div class="tab-pane fade in" id="tab4">
+        <div class="row">
+            <div class="col-lg-12">                
+                <h3>Thursday</h3>
+                <hr />
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item3.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item1.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item2.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+    </div>
+<!-- Page Header -->
+
+        <!-- Projects Row -->
+        <div class="tab-pane fade in" id="tab5">
+        <div class="row">
+            <div class="col-lg-12"> 
+                <h3>Friday</h3>
+                <hr />
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item1.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item2.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="images/item3.jpg" alt="">
+                </a>
+                <h3>
+                    <a href="#">Food Item</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+    </div>
+        <!-- /.row -->
+
+        
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Restaurant 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $(".btn-pref .btn").click(function () {
+            $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+             //$(".tab").addClass("active"); // instead of this do the below 
+            $(this).removeClass("btn-default").addClass("btn-primary");   
+            });
+        });           
+    </script>
+</body>
+
+</html>
